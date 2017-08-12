@@ -1,0 +1,211 @@
+@import url('normalize.css');
+
+@font-face {
+			font-family: "MuseoSansLight";
+			src: url("../fonts/MuseoSansLight/MuseoSansLight.eot");
+			src: url("../fonts/MuseoSansLight/MuseoSansLight.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/MuseoSansLight/MuseoSansLight.woff") format("woff"),
+			url("../fonts/MuseoSansLight/MuseoSansLight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+			}
+
+* {
+	font-family: 'MuseoSansLight', sans-serif;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body {
+	background-color: #c5c5c8;
+	
+}
+a {
+	text-decoration: none;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	
+}
+/* ------.container ------*/
+.container {
+	max-width: 800px;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 110px 50px 100px 62px;
+	background-color: #c5c5c8;
+	background-image: url('../img/layer3.png'), url('../img/layer1.png'), url('../img/group0.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+.product {
+	max-width: 686px;
+	padding: 24px 56px 20px 20px;
+	/* height: 391px; */
+	box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+	border-radius: 10px;
+	background-color: #111a28;
+}
+.logo {
+	float: left;
+	
+}
+.product__slider {
+	float: left;
+	width: 55%
+}
+.product__info {
+	float: right;
+	width: 35%;
+	padding: 18px 0 0 0;
+}
+.product__image {
+	padding: 68px 0 74px 16px;
+}
+/* -------- .button-list --------  */
+.button-list {
+	padding-left: 34px;
+	text-align: center;
+}
+.button-list__text {
+	position: absolute;
+	visibility: hidden;
+}
+.button-list__btn {
+	position: relative;
+	padding: 0;
+	margin: 0 5px;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	border: none;
+}
+.button-list__btn--first {
+	background-color: #1f273f;
+}
+.button-list__btn--second {
+	background-color: #ffffff;
+}
+.button-list__btn--third {
+	background-color: #ed3333;
+}
+.button-list__btn--fourth {
+	background-color: #29e3ea;
+}
+.button-list__btn:hover {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	outline: #FFF;
+	border: 2px solid #ffffff;
+	opacity: 0.46;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+/* -------- .button-list --------  */
+
+/* -------- .product__info --------  */
+.product__title {
+	margin: 0;
+    color: #e1e1e1;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 26px;
+}
+.product__subtitle {
+	margin-bottom: 14px;
+	color: rgba(225, 225, 225, 0.54);
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 26px;
+}
+
+.product-rating {
+	padding-left: 5px;
+    margin-bottom: 26px;
+  	unicode-bidi: bidi-override;
+  	direction: rtl;
+   	text-align: left;
+}
+.product-rating__item {
+  	display: inline-block;
+  	position: relative;
+  	color: rgba(225, 225, 225, 0.59);
+  	font-size: 12px;
+  
+}
+.product-rating__item:hover:before,
+.product-rating__item:hover ~ .product-rating__item:before {
+   content: "\2605";
+   position: absolute;
+   color: yellow;
+}
+.product-form__item {
+	/* display: none; */
+	position: relative;
+	opacity: 0;
+    width: 70px;
+    height: 32px;
+    margin-bottom: 30px;
+    background-color: yellow;
+    border: none;
+    border-radius: 0px;
+}
+.product-form__label {
+	position: absolute;
+    width: 70px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 0px;
+    color: rgba(255, 255, 255, 0.26);
+	font-size: 14px;
+	font-weight: 100;
+	background-color: #111a28;
+    line-height: 32px;
+    text-align: center;
+}
+.product-form__item:hover {
+	cursor: pointer;
+}
+.product-form__submit {
+	padding: 0;
+    width: 184px;
+    height: 40px;
+    font-size: 14px;
+    color: #e1e1e1;
+	font-weight: 100;
+	line-height: 40px;
+    border: 1px solid #ffffff;
+    background-color: #4c525a;
+    opacity: 0.26;
+}
+.product-form__submit:hover {
+	cursor: pointer;
+	outline-color: white;
+    border: none;
+    opacity: 1;
+}
+    
+
+
+
+
+
+
+
+
+
+
+/* -------- .product__info --------  */
+
+
+
+
+
