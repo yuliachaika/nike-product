@@ -96,6 +96,13 @@ a {
 .button-list__btn--fourth {
 	background-color: #29e3ea;
 }
+.button-list__btn--hover {
+	width: 16px;
+	height: 16px;
+	outline: #FFF;
+	border: 2px solid #ffffff;
+	opacity: 0.46;
+}
 .button-list__btn:hover {
 	cursor: pointer;
 	width: 16px;
