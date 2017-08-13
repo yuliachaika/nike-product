@@ -8,71 +8,80 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-		<div class="container">
-			<article class="product clearfix">
+	<div class="container">
+		<article class="product clearfix">
 			<div class="product-logo clearfix">
 				<img src="img/logo.png" class="logo" alt="logo"> <!-- ????-->
 			</div>   
 			<div class="product__slider">   <!-- left-->
 				<div class="product__image"> 
-				<!--надо ли самой картинке класс создавать??? -->
+					<!--надо ли самой картинке класс создавать??? -->
 					<img src="img/nike.png" alt="Nike SB Stefan Janoski Max">
 
 				</div>
-				<div class="button-list">
-					<button class="button-list__btn button-list__btn--first button-list__btn--hover">
-					<span class="button-list__text">Slide 1</span>
-					</button> 
-					<button class="button-list__btn button-list__btn--second">
-					<span class="button-list__text">Slide 2</span>
-					</button>
-					<button class="button-list__btn button-list__btn--third">
-					<span class="button-list__text">Slide 3</span>
-					</button>
-					<button class="button-list__btn button-list__btn--fourth">
-					<span class="button-list__text">Slide 4</span>
-					</button>
-				</div>
+				<ul class="button-list clearfix">
 
+					<li class="button-list__box"><button class="button-list__btn button-list__btn--first button-list__btn--hover">
+						<span class="button-list__text">Slide 1</span>
+					</button></li>
+					<li class="button-list__box"><button class="button-list__btn button-list__btn--second">
+						<span class="button-list__text">Slide 2</span>
+					</button></li>
+					<li class="button-list__box"><button class="button-list__btn button-list__btn--third">
+						<span class="button-list__text">Slide 3</span>
+					</button></li>
+					<li class="button-list__box"><button class="button-list__btn button-list__btn--fourth">
+						<span class="button-list__text">Slide 4</span>
+					</button></li>
+				</ul>
+				<!--  .button-list   -->
 			</div>
 			<div class="product__info">	   <!-- right-->
 				
-			
+				
 				<h1 class="product__title">Nike SB Stefan Janoski Max</h1>
 				<h3 class="product__subtitle">Unisex Skateboarding Shoe
 				</h3>
-			
-				<div class="product-rating">
-					<span class="product-rating__item">&#9733;</span>
-					<span class="product-rating__item">&#9733;</span>
-					<span class="product-rating__item">&#9733;</span>
-					<span class="product-rating__item">&#9733;</span>
-					<span class="product-rating__item">&#9733;</span>
-				</div>
-
 				<form action="#" class="product-form">
+					<div class="product-rating">
+						
+						<input class="product-rating__item" type="checkbox" name="item" id="star1">
+						<label class="product-rating__label" for="star1"></label>
+						
+						<input class="product-rating__item" type="checkbox" name="item" id="star2">
+						<label class="product-rating__label" for="star2"></label>
+						
+						<input class="product-rating__item" type="checkbox" name="item" id="star3">
+						<label class="product-rating__label" for="star3"></label>
+						
+						<input class="product-rating__item" type="checkbox" name="item" id="star4">
+						<label class="product-rating__label" for="star4"></label>
+						
+						<input class="product-rating__item" type="checkbox" name="item" id="star5">
+						<label class="product-rating__label" for="star5"></label>
+					</div>
 					<label class="product-form__label" for="size">Size <i class="fa fa-angle-down" aria-hidden="true"></i>
 					</label>
 					<select class="product-form__item" name="size" id="size" class="form-select">
-                		<option value="36">36</option>
-                		<option value="37">37</option>
-            		</select>
-            		<label class="product-form__label" for="qty">Qty <i class="fa fa-angle-down" aria-hidden="true"></i>
-            		</label>
-            		<select class="product-form__item" name="qty" id="qty" class="form-select">
-                		<option value="1">1</option>
-                		<option value="2">2</option>
-            		</select>
+						<option value="36">36</option>
+						<option value="37">37</option>
+					</select>
+					<label class="product-form__label" for="qty">Qty <i class="fa fa-angle-down" aria-hidden="true"></i>
+					</label>
+					<select class="product-form__item" name="qty" id="qty" class="form-select">
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
 
-            		<input type="submit" value="Add to cart" class="product-form__submit">
+					<input type="submit" value="Add to cart" class="product-form__submit">
 
 				</form>
 			</div>
 			
-				
-			</article>
+			
+		</article>
 		<!-- .product -->
-		</div>
-		<!-- .container -->
+	</div>
+	<!-- .container -->
 </body>
 </html>
